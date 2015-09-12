@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07AC9A141BA3FBD2008C43DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AC9A131BA3FBD2008C43DC /* main.m */; };
+		07AC9A171BA3FBD2008C43DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AC9A161BA3FBD2008C43DC /* AppDelegate.m */; };
+		07AC9A1A1BA3FBD2008C43DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AC9A191BA3FBD2008C43DC /* ViewController.m */; };
+		07AC9A1D1BA3FBD2008C43DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AC9A1B1BA3FBD2008C43DC /* Main.storyboard */; };
+		07AC9A1F1BA3FBD2008C43DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AC9A1E1BA3FBD2008C43DC /* Images.xcassets */; };
+		07AC9A221BA3FBD2008C43DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07AC9A201BA3FBD2008C43DC /* LaunchScreen.xib */; };
+		07AC9A2E1BA3FBD3008C43DC /* MSCCountDownButtonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AC9A2D1BA3FBD3008C43DC /* MSCCountDownButtonDemoTests.m */; };
+		07AC9A3A1BA3FC07008C43DC /* UIButton+ExCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AC9A391BA3FC07008C43DC /* UIButton+ExCountDown.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07AC9A281BA3FBD3008C43DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07AC9A061BA3FBD2008C43DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07AC9A0D1BA3FBD2008C43DC;
+			remoteInfo = MSCCountDownButtonDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07AC9A0E1BA3FBD2008C43DC /* MSCCountDownButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSCCountDownButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AC9A121BA3FBD2008C43DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AC9A131BA3FBD2008C43DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07AC9A151BA3FBD2008C43DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		07AC9A161BA3FBD2008C43DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		07AC9A181BA3FBD2008C43DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		07AC9A191BA3FBD2008C43DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		07AC9A1C1BA3FBD2008C43DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07AC9A1E1BA3FBD2008C43DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		07AC9A211BA3FBD2008C43DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		07AC9A271BA3FBD3008C43DC /* MSCCountDownButtonDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSCCountDownButtonDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AC9A2C1BA3FBD3008C43DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AC9A2D1BA3FBD3008C43DC /* MSCCountDownButtonDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSCCountDownButtonDemoTests.m; sourceTree = "<group>"; };
+		07AC9A381BA3FC07008C43DC /* UIButton+ExCountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ExCountDown.h"; sourceTree = "<group>"; };
+		07AC9A391BA3FC07008C43DC /* UIButton+ExCountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ExCountDown.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07AC9A0B1BA3FBD2008C43DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AC9A241BA3FBD3008C43DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07AC9A051BA3FBD2008C43DC = {
+			isa = PBXGroup;
+			children = (
+				07AC9A371BA3FC07008C43DC /* sdk */,
+				07AC9A101BA3FBD2008C43DC /* MSCCountDownButtonDemo */,
+				07AC9A2A1BA3FBD3008C43DC /* MSCCountDownButtonDemoTests */,
+				07AC9A0F1BA3FBD2008C43DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07AC9A0F1BA3FBD2008C43DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07AC9A0E1BA3FBD2008C43DC /* MSCCountDownButtonDemo.app */,
+				07AC9A271BA3FBD3008C43DC /* MSCCountDownButtonDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07AC9A101BA3FBD2008C43DC /* MSCCountDownButtonDemo */ = {
+			isa = PBXGroup;
+			children = (
+				07AC9A151BA3FBD2008C43DC /* AppDelegate.h */,
+				07AC9A161BA3FBD2008C43DC /* AppDelegate.m */,
+				07AC9A181BA3FBD2008C43DC /* ViewController.h */,
+				07AC9A191BA3FBD2008C43DC /* ViewController.m */,
+				07AC9A1B1BA3FBD2008C43DC /* Main.storyboard */,
+				07AC9A1E1BA3FBD2008C43DC /* Images.xcassets */,
+				07AC9A201BA3FBD2008C43DC /* LaunchScreen.xib */,
+				07AC9A111BA3FBD2008C43DC /* Supporting Files */,
+			);
+			path = MSCCountDownButtonDemo;
+			sourceTree = "<group>";
+		};
+		07AC9A111BA3FBD2008C43DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07AC9A121BA3FBD2008C43DC /* Info.plist */,
+				07AC9A131BA3FBD2008C43DC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07AC9A2A1BA3FBD3008C43DC /* MSCCountDownButtonDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				07AC9A2D1BA3FBD3008C43DC /* MSCCountDownButtonDemoTests.m */,
+				07AC9A2B1BA3FBD3008C43DC /* Supporting Files */,
+			);
+			path = MSCCountDownButtonDemoTests;
+			sourceTree = "<group>";
+		};
+		07AC9A2B1BA3FBD3008C43DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07AC9A2C1BA3FBD3008C43DC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07AC9A371BA3FC07008C43DC /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				07AC9A381BA3FC07008C43DC /* UIButton+ExCountDown.h */,
+				07AC9A391BA3FC07008C43DC /* UIButton+ExCountDown.m */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07AC9A0D1BA3FBD2008C43DC /* MSCCountDownButtonDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AC9A311BA3FBD3008C43DC /* Build configuration list for PBXNativeTarget "MSCCountDownButtonDemo" */;
+			buildPhases = (
+				07AC9A0A1BA3FBD2008C43DC /* Sources */,
+				07AC9A0B1BA3FBD2008C43DC /* Frameworks */,
+				07AC9A0C1BA3FBD2008C43DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSCCountDownButtonDemo;
+			productName = MSCCountDownButtonDemo;
+			productReference = 07AC9A0E1BA3FBD2008C43DC /* MSCCountDownButtonDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07AC9A261BA3FBD3008C43DC /* MSCCountDownButtonDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AC9A341BA3FBD3008C43DC /* Build configuration list for PBXNativeTarget "MSCCountDownButtonDemoTests" */;
+			buildPhases = (
+				07AC9A231BA3FBD3008C43DC /* Sources */,
+				07AC9A241BA3FBD3008C43DC /* Frameworks */,
+				07AC9A251BA3FBD3008C43DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07AC9A291BA3FBD3008C43DC /* PBXTargetDependency */,
+			);
+			name = MSCCountDownButtonDemoTests;
+			productName = MSCCountDownButtonDemoTests;
+			productReference = 07AC9A271BA3FBD3008C43DC /* MSCCountDownButtonDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07AC9A061BA3FBD2008C43DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = MiaoShichang;
+				TargetAttributes = {
+					07AC9A0D1BA3FBD2008C43DC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					07AC9A261BA3FBD3008C43DC = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 07AC9A0D1BA3FBD2008C43DC;
+					};
+				};
+			};
+			buildConfigurationList = 07AC9A091BA3FBD2008C43DC /* Build configuration list for PBXProject "MSCCountDownButtonDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07AC9A051BA3FBD2008C43DC;
+			productRefGroup = 07AC9A0F1BA3FBD2008C43DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07AC9A0D1BA3FBD2008C43DC /* MSCCountDownButtonDemo */,
+				07AC9A261BA3FBD3008C43DC /* MSCCountDownButtonDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07AC9A0C1BA3FBD2008C43DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AC9A1D1BA3FBD2008C43DC /* Main.storyboard in Resources */,
+				07AC9A221BA3FBD2008C43DC /* LaunchScreen.xib in Resources */,
+				07AC9A1F1BA3FBD2008C43DC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AC9A251BA3FBD3008C43DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07AC9A0A1BA3FBD2008C43DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AC9A3A1BA3FC07008C43DC /* UIButton+ExCountDown.m in Sources */,
+				07AC9A1A1BA3FBD2008C43DC /* ViewController.m in Sources */,
+				07AC9A171BA3FBD2008C43DC /* AppDelegate.m in Sources */,
+				07AC9A141BA3FBD2008C43DC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AC9A231BA3FBD3008C43DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AC9A2E1BA3FBD3008C43DC /* MSCCountDownButtonDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07AC9A291BA3FBD3008C43DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07AC9A0D1BA3FBD2008C43DC /* MSCCountDownButtonDemo */;
+			targetProxy = 07AC9A281BA3FBD3008C43DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07AC9A1B1BA3FBD2008C43DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AC9A1C1BA3FBD2008C43DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07AC9A201BA3FBD2008C43DC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AC9A211BA3FBD2008C43DC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07AC9A2F1BA3FBD3008C43DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07AC9A301BA3FBD3008C43DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07AC9A321BA3FBD3008C43DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MSCCountDownButtonDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07AC9A331BA3FBD3008C43DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MSCCountDownButtonDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07AC9A351BA3FBD3008C43DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MSCCountDownButtonDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSCCountDownButtonDemo.app/MSCCountDownButtonDemo";
+			};
+			name = Debug;
+		};
+		07AC9A361BA3FBD3008C43DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MSCCountDownButtonDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSCCountDownButtonDemo.app/MSCCountDownButtonDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07AC9A091BA3FBD2008C43DC /* Build configuration list for PBXProject "MSCCountDownButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AC9A2F1BA3FBD3008C43DC /* Debug */,
+				07AC9A301BA3FBD3008C43DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07AC9A311BA3FBD3008C43DC /* Build configuration list for PBXNativeTarget "MSCCountDownButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AC9A321BA3FBD3008C43DC /* Debug */,
+				07AC9A331BA3FBD3008C43DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07AC9A341BA3FBD3008C43DC /* Build configuration list for PBXNativeTarget "MSCCountDownButtonDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AC9A351BA3FBD3008C43DC /* Debug */,
+				07AC9A361BA3FBD3008C43DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07AC9A061BA3FBD2008C43DC /* Project object */;
+}
