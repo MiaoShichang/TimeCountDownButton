@@ -31,8 +31,13 @@
 
 /**
  *@brief UIControlEventTouchUpInside 事件 block 
+ *
+ *@return 返回值为YES时，计时器开始执行；返回NO时，计时器不执行；
+ *
+ *在检测手机号不正确时， 返回值的作用是给用户一次是否开始倒计时的机会，
+ *
  *@note 注意：不要给倒计时按钮添加 UIControlEventTouchUpInside 事件 
  */
-@property (nonatomic, copy) void (^touchUpInsideEvent)(UIButton *button);
+@property (nonatomic, copy) BOOL (^touchUpInsideEvent)(UIButton *button);
 
 @end

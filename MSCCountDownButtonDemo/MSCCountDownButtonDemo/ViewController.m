@@ -29,6 +29,8 @@
     countDownBtn.touchUpInsideEvent = ^(UIButton *btn){
         // 此函数就是 UIControlEventTouchUpInside 事件，不要给倒计时按钮添加 UIControlEventTouchUpInside 事件
         NSLog(@"单行显示文字");
+        
+        return YES;
     };
     
     [self.view addSubview:countDownBtn];
@@ -61,6 +63,8 @@
     countDownButton.touchUpInsideEvent = ^(UIButton *btn){
         // 此函数就是 UIControlEventTouchUpInside 事件，不要给倒计时按钮添加 UIControlEventTouchUpInside 事件
         NSLog(@"两行显示文字");
+        
+        return NO;
     };
     
     [self.view addSubview:countDownButton];
