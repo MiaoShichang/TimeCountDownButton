@@ -20,7 +20,7 @@ char *const kEXButtonAssociatedObject = "kEXButtonAssociatedObject";
 @property (nonatomic, assign) NSInteger duration;
 @property (nonatomic, copy) NSString *(^timeChangedTitle)(UIButton *button, NSInteger second);
 @property (nonatomic, copy) NSString *(^timeStopTitle)(UIButton *button);
-@property (nonatomic, copy) BOOL (^touchUpInsideEvent)(UIButton *button);
+@property (nonatomic, copy) BOOL (^timeWillStart)(UIButton *button);
 
 @end
 
@@ -89,26 +89,26 @@ char *const kEXButtonAssociatedObject = "kEXButtonAssociatedObject";
     return associatedObject.timeStopTitle;
 }
 
-- (void)setTouchUpInsideEvent:(BOOL (^)(UIButton *))touchUpInsideEvent
+- (void)setTimeWillStart:(BOOL (^)(UIButton *))timeWillStart
 {
     EXButtonAssociatedObject *associatedObject = [self buttonAssociatedObject];
-    associatedObject.touchUpInsideEvent = touchUpInsideEvent;
+    associatedObject.timeWillStart = timeWillStart;
 }
 
-- (BOOL (^)(UIButton *))touchUpInsideEvent
+- (BOOL (^)(UIButton *))timeWillStart
 {
     EXButtonAssociatedObject *associatedObject = [self buttonAssociatedObject];
     
-    return associatedObject.touchUpInsideEvent;
+    return associatedObject.timeWillStart;
 }
 
 #pragma mark -
 
 - (void)exp_clicked:(UIButton *)btn
 {
-    if (self.touchUpInsideEvent)
+    if (self.timeWillStart)
     {
-        if(self.touchUpInsideEvent(self))
+        if(self.timeWillStart(self))
         {
             [self exp_start];
         }

@@ -26,8 +26,8 @@
     countDownBtn.titleLabel.font = [UIFont systemFontOfSize:13];
     
     countDownBtn.duration = 20;
-    countDownBtn.touchUpInsideEvent = ^(UIButton *btn){
-        // 此函数就是 UIControlEventTouchUpInside 事件，不要给倒计时按钮添加 UIControlEventTouchUpInside 事件
+    countDownBtn.timeWillStart = ^(UIButton *btn){
+        // 注意：此函数就是 UIControlEventTouchUpInside 事件，不要给倒计时按钮添加 UIControlEventTouchUpInside 事件
         NSLog(@"单行显示文字");
         
         return YES;
@@ -47,7 +47,7 @@
     countDownButton.duration = 20;
     
     countDownButton.timeChangedTitle = ^(UIButton *btn, NSInteger second){
-        [btn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+        [btn setTitleColor:[self randomColor] forState:UIControlStateNormal];
         btn.backgroundColor = [UIColor orangeColor];
         
         return [NSString stringWithFormat:@"%lds\n重新发送", (long)second];
@@ -60,14 +60,24 @@
         return @"重新发送";
     };
     
-    countDownButton.touchUpInsideEvent = ^(UIButton *btn){
-        // 此函数就是 UIControlEventTouchUpInside 事件，不要给倒计时按钮添加 UIControlEventTouchUpInside 事件
+    countDownButton.timeWillStart = ^(UIButton *btn){
+        // 注意：此函数就是 UIControlEventTouchUpInside 事件，不要给倒计时按钮添加 UIControlEventTouchUpInside 事件
         NSLog(@"两行显示文字");
         
-        return NO;
+        return YES;
     };
     
     [self.view addSubview:countDownButton];
+}
+
+- (UIColor *)randomColor
+{
+    int r = arc4random()%256;
+    int g = arc4random()%256;
+    int b = arc4random()%256;
+    UIColor *color = [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:1];
+    
+    return color;
 }
 
 - (void)didReceiveMemoryWarning {
